@@ -169,13 +169,6 @@ uv run test_simple.py
 uv run test_full.py
 ```
 
-## Cost Notes
-
-This project is built to be cheap to run and easy to tear down:
-
-- S3 Vectors instead of a managed vector database (~90% cheaper than OpenSearch)
-- SageMaker Serverless and Lambda scale to zero
-- Aurora Serverless v2 is the largest recurring cost — destroy the `5_database` stack when not actively developing
 
 ```bash
 # Tear down in reverse order
